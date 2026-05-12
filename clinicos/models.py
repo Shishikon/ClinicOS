@@ -14,7 +14,7 @@ class BookAppointment(models.Model):
     email = models.EmailField(max_length=55)
     phone = models.CharField(blank=False, max_length=20)
     date = models.DateField(blank=False)
-    time = models.TimeField(blank=False, max_length=12)
+    picktime = models.TimeField(blank=False, max_length=12)
     type_of = models.CharField(choices=APPOINTMENT_CHOICES, default="General")
     people = models.IntegerField(blank=False, validators=[MinValueValidator(1)], null=False)
     message = models.TextField(max_length=255)
@@ -28,7 +28,7 @@ class Qrcode(models.Model):
     email = models.EmailField(max_length=55)
     phone = models.CharField(blank=False, max_length=20)
     date = models.CharField(blank=False, max_length=15)
-    time = models.CharField(blank=False, max_length=12)
+    picktime = models.CharField(blank=False, max_length=12)
     people = models.IntegerField(blank=False, null=False)
     message = models.TextField(max_length=255)
 

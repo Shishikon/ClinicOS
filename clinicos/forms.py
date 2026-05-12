@@ -11,7 +11,7 @@ class BookAppointmentForm(forms.ModelForm):
             'email',
             'phone',
             'date',
-            'time',
+            'picktime',
             'people',
             'type_of',
             'message',
@@ -57,11 +57,11 @@ class BookAppointmentForm(forms.ModelForm):
                 'data-msg': 'Please enter at least 10 chars',
             }),
 
-            'time': forms.TimeInput(attrs={
+            'picktime': forms.TimeInput(attrs={
                 'type': 'time',
                 'class': 'form-control',
-                'name': 'time',
-                'id': 'time',
+                'name': 'picktime',
+                'id': 'picktime',
                 'placeholder': 'Time',
                 'data-rule': 'minlen:4',
                 'data-msg': 'Please enter at least 4 chars',
@@ -101,7 +101,7 @@ class QrCodeForm(forms.ModelForm):
             'email',
             'phone',
             'date',
-            'time',
+            'picktime',
             'people',
             'message',
         ]

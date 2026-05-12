@@ -34,7 +34,7 @@ def book_app(request):
         email = data['email']
         phone = data['phone']
         date = data['date']
-        time = data['time']
+        picktime = data['picktime']
         people = data['people']
         type_of = data['type_of']
         message = data['message']
@@ -44,7 +44,7 @@ def book_app(request):
         Email: {email}
         Phone: {phone}
         Date: {date}
-        Time: {time}
+        Time: {picktime}
         People: {people}
         Type of : {type_of}
         Message: {message}
@@ -63,7 +63,7 @@ def book_app(request):
             'email': email,
             'phone': phone,
             'date': date,
-            'time': time,
+            'picktime': picktime,
             'people': people,
             'type_of': type_of,
             'message': message,
