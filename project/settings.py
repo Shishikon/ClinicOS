@@ -29,7 +29,7 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
 import os
 
-#
+
 CSRF_TRUSTED_ORIGINS = ['https://' + host for host in os.environ.get('ALLOWED_HOSTS', '').split(',') if host]
 
 # Application definition
