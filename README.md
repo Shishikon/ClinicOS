@@ -2,6 +2,8 @@
 
 > A clean and modern clinic management platform — patients book appointments with doctors and walk away with a QR code as their confirmation ticket.
 
+![ClinicOS](https://github.com/user-attachments/assets/ef6fc42d-adc6-4939-9746-bdd44114f908)
+
 🌐 **Live Demo:** [clinicosapp.up.railway.app](https://clinicosapp.up.railway.app)
 
 ---
