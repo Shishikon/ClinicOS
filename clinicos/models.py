@@ -15,7 +15,7 @@ class BookAppointment(models.Model):
     phone = models.CharField(blank=False, max_length=20)
     date = models.DateField(blank=False)
     picktime = models.TimeField(blank=False, max_length=12)
-    type_of = models.CharField(choices=APPOINTMENT_CHOICES, default="General")
+    type_of = models.CharField(choices=APPOINTMENT_CHOICES, default="General", max_length=100)
     people = models.IntegerField(blank=False, validators=[MinValueValidator(1)], null=False)
     message = models.TextField(max_length=255)
 
